@@ -1,5 +1,5 @@
 
-// Event fires on each new page loaded
+//    Event fires on each new page loaded
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   // Enable extension on SO Questions pages only
   if (tab.url.match(/stackoverflow\.com\/questions/))  {
